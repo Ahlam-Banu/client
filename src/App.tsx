@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// App.tsx
 
-function App() {
+import React from 'react';
+import './App.css';
+import Header from './Components/Header/header';
+import Footer from './Components/Footer/footer';
+
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <main className="main-content">
+        {/* Your main content goes here */}
+        <h1>Welcome to Student Course Management System</h1>
+        <p>This is your main content area.</p>
+      </main>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
