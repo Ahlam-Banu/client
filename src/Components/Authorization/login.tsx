@@ -1,5 +1,3 @@
-// Sample TypeScript for login page
-
 import React, { useState } from 'react';
 
 const Login: React.FC = () => {
